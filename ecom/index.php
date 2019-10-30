@@ -25,6 +25,12 @@
 				<li><a href="#">Shopping Cart</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+			<div id="form">
+				<form method="get" action = "results.php" enctype="multipart/form-data">
+					<input type="text" name="user_query" placeholder="Search here"/>
+					<input type="submit" name="search" value="Search"/>
+				</form>
+			</div> 
 		</div>
 	<!-- End menubar -->
 

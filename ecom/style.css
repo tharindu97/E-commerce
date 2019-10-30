@@ -44,6 +44,7 @@ body {
 	color: white;
 }
 #menu{
+	float: left;
 	padding: 0;
 	margin: 0;
 	line-height: 40px;
@@ -68,6 +69,11 @@ body {
 	font-weight: bolder;
 	text-decoration: underline;
 
+}
+#form{
+	float: right;
+	padding-right: 8px;
+	line-height: 50px;
 }
 
 .content_wrapper{
