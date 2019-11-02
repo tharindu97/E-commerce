@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php  
+	include("functions/functions.php");
+?>
 <html>
 <head>
 	<title>Online Shopping</title>
@@ -39,21 +42,11 @@
 			<div id ="sidebar"> 
 				<div id="sidebar_title">Categories</div>
 					<ul id="cats">
-						<li><a href="#">Laptops</a></li>
-						<li><a href="#">Computers</a></li>
-						<li><a href="#">Mobiles</a></li>
-						<li><a href="#">Cameras</a></li>
-						<li><a href="#">ipads</a></li>
-						<li><a href="#">Tablets</a></li>
+						<?php getCats(); ?>
 					</ul>
 				<div id="sidebar_title">Brand</div>
 					<ul id="cats">
-						<li><a href="#">HP</a></li>
-						<li><a href="#">DELL</a></li>
-						<li><a href="#">APPLE</a></li>
-						<li><a href="#">Sony</a></li>
-						<li><a href="#">ASUS</a></li>
-						<li><a href="#">Acear</a></li>
+						<?php getBrands(); ?>
 					</ul>
 			</div>
 			<div id = "content_area"> This is  content area</div>
@@ -61,7 +54,9 @@
 	<!-- strat content_wrapper -->
 
 	<!-- strat footer -->	
-		<div id = "footer"> This is  the footer</div>
+		<div id = "footer">
+			<h2 style="text-align:center; padding-top:40px;">&copy; 2019 by tharindukavishna@gmail.com</h2>
+		</div>
 	<!-- strat footer -->
 	</div>
 
