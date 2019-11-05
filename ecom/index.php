@@ -15,6 +15,7 @@
 		<div class="header_wrapper">
 			<img id="logo" src="images/profile.png" />
 			<img id="banner" src="images/profile.png"/>
+	
 		</div>
 	<!-- end header_wrapper -->
 
@@ -49,7 +50,11 @@
 						<?php getBrands(); ?>
 					</ul>
 			</div>
-			<div id = "content_area"> This is  content area</div>
+			<div id = "content_area"> 
+				<div id="products_box">
+				<?php getPro(); ?>
+				</div>
+			</div>
 		</div>	
 	<!-- strat content_wrapper -->
 
