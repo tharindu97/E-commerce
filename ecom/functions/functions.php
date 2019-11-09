@@ -31,7 +31,7 @@
             echo "<li><a href='#'>$brand_title</a></li>";
         }
     }
-
+    //Display
     function getPro(){
         global $con;
 
