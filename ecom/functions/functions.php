@@ -51,8 +51,8 @@
                 <h3>$pro_title</h3>
                 <img src='admin_area/product_images/$pro_image' width = '180' height='180'>
                 <p><b>$ $pro_price</b></p>
-                <a href='details.php' style='float:left'>Details</a>
-                <a href='index.php'><button style='float:right'>Add to Card</button></a>
+                <a href='details.php?pro_id=$pro_id' style='float:left'>Details</a>
+                <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Card</button></a>
         </div>
             ";
         }
