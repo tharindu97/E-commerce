@@ -57,6 +57,7 @@
 					</span>
 				</div> 
 				<div id="products_box">
+				<!-- Display All Products -->
                     <?php 
                     
                             $get_pro = "select * from products";
