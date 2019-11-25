@@ -56,6 +56,7 @@
 					Welcome Guest! <b style="color:yellow;">Shopping Cart -</b> Total Items: Total Price: <a href="cart.php" style="color:yellow">Go to Cart</a>
 					</span>
 				</div> 
+				<?php echo $ip = getId(); ?>
 				<div id="products_box">
 					<?php getPro(); ?>
 					<?php getCatPro(); ?>

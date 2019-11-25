@@ -1,6 +1,29 @@
 <?php 
 
     $con = mysqli_connect("localhost", "root", "", "ecommerce");
+    if(mysqli_connect_errno()){
+        echo "The Connection was not established: " . mysqli_connect_error();
+    }
+
+    function getIp() {
+        $ip = $_SERVER['REMOTE_ADDR'];
+     
+        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+            $ip = $_SERVER['HTTP_CLIENT_IP'];
+        } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        }
+     
+        return $ip;
+    }
+     
+    
+
+    function cart(){
+        if(isset($_GET['add_cart'])){
+               
+        }
+    }
 
     //getting the categories
 
@@ -56,7 +79,7 @@
                         <img src='admin_area/product_images/$pro_image' width = '180' height='180'>
                         <p><b>$ $pro_price</b></p>
                         <a href='details.php?pro_id=$pro_id' style='float:left'>Details</a>
-                        <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Card</button></a>
+                        <a href='index.php?add_cart=$pro_id'><button style='float:right'>Add to Card</button></a>
                 </div>
                     ";
                 }
@@ -95,7 +118,7 @@
                         <img src='admin_area/product_images/$pro_image' width = '180' height='180'>
                         <p><b>$ $pro_price</b></p>
                         <a href='details.php?pro_id=$pro_id' style='float:left'>Details</a>
-                        <a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Card</button></a>
+                        <a href='index.php?add_cart=$pro_id'><button style='float:right'>Add to Card</button></a>
                 </div>
                     ";
                 }
